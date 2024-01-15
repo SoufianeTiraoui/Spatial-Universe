@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spatial Universe</title>
+  <link rel="icon" type="image/x-icon" href="assets/siteicon.jpeg">
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</head>
+<body>
+    <div class="svg-container-wrapper">
+        <h3>1er Graphe</h3>
+        <div class="img-container" id="svgContainer1" onclick="openModal('assets/grapheone.svg', 'Graphe One')">
+          <img src="assets/grapheone.svg" alt="Graphe One">
+        </div>
+    </div>
+    
+    <div class="svg-container-wrapper">
+        <h3>2éme Graphe</h3>
+        <div class="img-container" id="svgContainer2" onclick="openModal('assets/graphetwo.jpg', 'Viz')">
+          <img src="assets/graphetwo.jpg" alt="Viz">
+        </div>
+    </div  >
+
+  <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modalImg" src="" alt="Image en grand">
+  </div>
+
+
+</body>
+</html>
