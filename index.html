@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spatial-Universe</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Assuming you want to display one SVG at a time and have the entire viewport -->
+    <iframe src="converted_image.svg" style="width:100%; height:100vh;"></iframe>
+    <iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#SELECT%20%0A%20%20%3Fville%20%3FvilleLabel%20%0A%20%20%3Fpays%20%3FpaysLabel%20%0A%20%20%3Fpopulation%20%0A%20%20%3Fsuperficie%20%0A%20%20%3Fmaire%20%3FmaireLabel%20%0A%20%20%3FanneeFondation%20%0A%20%20%3Faltitude%20%0A%20%20%3FsiteWeb%20%0A%20%20%3Fdrapeau%20%3FdrapeauLabel%20%0A%20%20%3Fblason%20%3FblasonLabel%20%0A%20%20%3FcodePostal%20%0A%20%20%3Flatitude%20%3Flongitude%20%0A%20%20%3FimageVille%0AWHERE%20%7B%0A%20%20%3Fville%20wdt%3AP31%20wd%3AQ515%3B%20%23%20Type%3A%20ville%0A%20%20%20%20%20%20%20%20wdt%3AP17%20%3Fpays%3B%20%23%20Pays%0A%20%20%20%20%20%20%20%20wdt%3AP1082%20%3Fpopulation%3B%20%23%20Population%0A%20%20%20%20%20%20%20%20wdt%3AP2046%20%3Fsuperficie%3B%20%23%20Superficie%0A%20%20%20%20%20%20%20%20wdt%3AP6%20%3Fmaire%3B%20%23%20Maire%0A%20%20%20%20%20%20%20%20wdt%3AP571%20%3FanneeFondation%3B%20%23%20Ann%C3%A9e%20de%20fondation%0A%20%20%20%20%20%20%20%20wdt%3AP2044%20%3Faltitude%3B%20%23%20Altitude%0A%20%20%20%20%20%20%20%20wdt%3AP856%20%3FsiteWeb%3B%20%23%20Site%20web%0A%20%20%20%20%20%20%20%20wdt%3AP41%20%3Fdrapeau%3B%20%23%20Drapeau%0A%20%20%20%20%20%20%20%20wdt%3AP94%20%3Fblason%3B%20%23%20Blason%0A%20%20%20%20%20%20%20%20wdt%3AP281%20%3FcodePostal%3B%20%23%20Code%20postal%0A%20%20%20%20%20%20%20%20wdt%3AP625%20%3Fcoord.%20%23%20Coordonn%C3%A9es%20g%C3%A9ographiques%0A%20%20OPTIONAL%20%7B%20%3Fville%20wdt%3AP18%20%3FimageVille%20%7D%20%23%20Image%20de%20la%20ville%0A%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22fr%2Cfr%22.%20%7D%0A%20%20BIND(STRBEFORE(STR(%3Fcoord)%2C%20%22%20%22)%20AS%20%3Flatitude)%0A%20%20BIND(STRAFTER(STR(%3Fcoord)%2C%20%22%20%22)%20AS%20%3Flongitude)%0A%7D%0ALIMIT%2010%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+</body>
+</html>
