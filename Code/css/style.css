@@ -1,12 +1,15 @@
-body {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
-    font-family: 'Arial', sans-serif;
-  }
+body{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url('Back.jpeg');
+  background-size: cover; 
+  background-position: center; 
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('Back.jpeg');
+  color: #ffffff; 
+  font-family: Arial, sans-serif;
+}
 
   .img-container {
     position: relative;
