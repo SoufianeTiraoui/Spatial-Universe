@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spatial Universe</title>
+    <link rel="icon" type="image/x-icon" href="mars.png">
+    <style>
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('azerty.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: #8B4513;
+        }
+
+        header {
+            background: linear-gradient(to right, #F5DEB3, #8B4513, #fff);
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+    
+        }
+        footer {
+            background: linear-gradient(to right, #F5DEB3, #8B4513, #fff);
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+
+        }
+        .icon-container {
+        display: flex; /* Utilise Flexbox pour aligner les images en ligne */
+    }
+    .icon-container img {
+        width: 50px; /* Ajustez la taille selon vos besoins */
+        height: 50px; /* Ajustez la taille selon vos besoins */
+        margin-right: 10px; /* Espace entre les icônes */
+    }
+    .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header img {
+            width: 50px; /* Adjust the size as needed */
+            height: auto; /* Keeps the aspect ratio of the image */
+            margin-right: 10px;
+        }
+
+        main {
+            width: 70%;
+            max-width: none;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        section p {
+            color: #000000;
+        }
+
+        footer {
+            padding: 10px 0;
+            width: 100%;
+        }
+        
+
+        .slider {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+}
+
+.slides > section {
+    flex: 0 0 95%;
+    transition: transform 0.6s ease;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: brown;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.section-visualisation2 {
+    padding-bottom: 10px; /* Réduisez le padding en bas selon vos besoins */
+    margin-bottom: 10px; /* Réduisez la marge en bas selon vos besoins */
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="mars.png" alt="Icon 1">
+        <h1>Spatial Universe</h1>
+    </header>
+
+    <main>
+        <div class="slider">
+            <div class="slides">
+                <!-- Visualisation 1 : Données quantitatives et catégorielles -->
+<section id="visualisation1" style="text-align: center; margin-bottom: 30px;">
+    <h2>Données Quantitatives et Catégorielles</h2>
+    <img src="visualization.svg" style="width: 100%; max-width: 900px; height: auto;">
+    <p style="font-size: 18px; line-height: 1.6; margin: 15px 0; text-align: justify;">
+        La première visualisation présente un graphique en bâton illustrant l'évolution du nombre de satellites envoyés au fil des années. Les barres verticales représentent chaque année, offrant une représentation visuelle claire de l'activité spatiale au fil du temps. Ce graphique permet de visualiser les fluctuations et les tendances dans le lancement de satellites, offrant ainsi une perspective dynamique sur le développement spatial au fil des années.
+    </p>
+    <p style="font-size: 15px ; color: #8B4513;font-style: italic; text-decoration: underline; line-height: 1.6; margin: 15px 0; text-align : justify;">
+        NB : Le premier véritable satellite, Courrier B, fut lancé en octobre 1960. Il était doté d'équipements électroniques, permettant de recevoir puis d'amplifier le message avant de le réémettre. Il ne fonctionna que 17 jours. Le satellite Telstar, (juillet 1962) fut une réussite beaucoup plus probante.
+    </p>  
+    <img src="pointvisu.svg" style="width: 100%; max-width: 900px; height: auto;">
+    <p style="font-size: 18px; line-height: 1.6; margin: 15px 0; text-align : justify;">
+        La deuxième visualisation présente un graphique en dispersion mettant en évidence les données de périgée et d'apogée des orbites. Les points dispersés sur le graphique représentent différentes orbites, avec les axes horizontal et vertical indiquant respectivement les valeurs de périgée et d'apogée en kilomètres. En haut à droite, une légende intitulée 'Classe d'orbite' offre une référence pour interpréter les différentes catégories d'orbites représentées sur le graphique. Cette visualisation permet d'explorer la diversité des orbites spatiales en fonction de leurs caractéristiques spécifiques
+    </p>   
+    <a href="https://docs.google.com/spreadsheets/d/1w7iabZxC-XP7Q77Rgj1Uw4Edrsu45nyrFv23EZLP5s4/edit?usp=sharing">Base de données</a>
+ 
+    <p style="font-size: 15px ; color: #8B4513; font-style: italic; text-decoration: underline; line-height: 1.6; margin: 15px 0; text-align : justify;">
+        NB : Le périgée d'un satellite de la Terre est le point de son orbite qui est le plus proche du centre de la Terre. Le point qui en est le plus loin est l'apogée
+    </p>  
+</section>
+
+<!-- Visualisation 2 : Données spatiales ou temporelles -->
+<section id="visualisation2" class="section-visualisation2" style="text-align: center;">
+    <h2>Données Spatiales ou Temporelles</h2>
+    <img src="qsdfgh.jpeg" style="width: 100%; max-width: 900px; height: auto;">
+    <p style="font-size: 18px; line-height: 1.6; margin: 15px 0; text-align: justify;">
+        Naviguez à travers cette carte où les nuances de vert traduisent une intense activité spatiale, indiquant des nations qui ont massivement contribué à l'exploration de l'espace. En revanche, les zones teintées de rouge signalent des niveaux d'activité plus modestes. Cette représentation visuelle vous offre un aperçu dynamique de la répartition mondiale des lancements satellitaires, mettant en évidence les disparités entre les nations dans leur engagement envers l'exploration spatiale. Explorez cette cartographie unique pour découvrir les contributions de chaque pays à la conquête spatiale.
+    </p>
+
+    <a href="https://docs.google.com/spreadsheets/d/16IsgwNEjnZc77NZFyJsM38rn7Pr0Qg42oRwu8HrSW7E/edit?usp=sharing">Base de données</a>
+<p style="font-size: 15px ; color: #8B4513; font-style: italic; text-decoration: underline; line-height: 1.6; margin: 15px 0; text-align : justify;">
+    NB : Les satellites observent la couche nuageuse pour nous aider à faire des prévisions météo, renseignent les militaires sur des zones de conflit difficiles d'accès, transmettent la télévision, ou encore cherchent des informations sur notre Univers.
+
+</p>  
+</section>
+
+<!-- Visualisation 3 : Données non-structurées -->
+<section id="visualisation3" style="text-align: center; margin-bottom: 30px;">
+    <h2>Données Non-Structurées</h2>
+    <img src="qwerty.jpeg" style="width: 100%; max-width: 900px; height: auto;">
+    <p style="font-size: 18px; line-height: 1.6; margin: 15px 0; text-align: justify;">
+        Transportez vous au cœur d'un spectacle cosmique époustouflant. Cette image de données non structurées capture la magnificence de l'univers, regorgeant de planètes mystérieuses, d'étoiles scintillantes et d'objets célestes fascinants. Chaque élément lumineux et chaque recoin de l'image révèlent la diversité infinie de notre cosmos. Explorez cette galaxie visuelle et plongez dans l'émerveillement de la complexité cosmique qui nous entoure.
+    </p>
+    <p style="font-size: 15px ; color: #8B4513; font-style: italic; text-decoration: underline; line-height: 1.6; margin: 15px 0; text-align : justify;">
+        NB : L'Univers, au sens cosmologique, est l'ensemble de tout ce qui existe, décrit à partir d'observations scientifiques et régi par des lois physiques. La cosmologie cherche à appréhender l'Univers d'un point de vue scientifique, comme l'ensemble de la matière et de l'énergie distribuées dans l'espace-temps.
+    
+    </p>  
+    <img src="wxcvbn.jpeg" style="width: 100%; max-width: 900px; height: auto;">
+    <p style="font-size: 18px; line-height: 1.6; margin: 15px 0; text-align: justify;">
+        Plongez dans l'essence même de l'espace avec cette image captivante de données non structurées, représentée sous la forme d'un code-barres cosmique. Chaque trait et chaque espace dans ce code-barres renferment des informations mystérieuses sur notre univers. Chaque variation de largeur, chaque nuance de couleur, raconte une histoire unique, un fragment de la vaste connaissance de l'espace. Explorez ce code-barres stellaire, décodant les secrets de l'infini à travers une représentation visuelle intrigante et artistique.
+    </p>
+    <a href="https://www.kaggle.com/datasets/kimbosoek/cosmos-images">Base de données</a>
+
+    <p style="font-size: 15px ; color: #8B4513; font-style: italic; text-decoration: underline; line-height: 1.6; margin: 15px 0; text-align : justify;">
+        NB : La notion de « non structurées » désigne le fait qu'il s'agit de jeux de données (grands ensembles de fichiers typiques) stockés sans format de base de données structurée.
+    
+    </p>  
+    
+</section>
+            </div>
+            <!-- Contrôles de navigation -->
+            <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+            <a class="next" onclick="moveSlide(1)">&#10095;</a>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <p>Réalisé par : Salim AKHRIB, Mohamed Soufiane TIRAOUI,  EL Mehdi EL MOUFID, Leticia YAKOUBI, Abderahim OUMOUSSI, Yasmine REGRAGUI</p>
+        <p>Sources d'information : Wikidata, Kaggle, Vega, ChatGPT</p>
+    </footer>
+
+    <script>
+        var slideIndex = 0;
+showSlides(slideIndex);
+
+function moveSlide(n) {
+    showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("slides")[0].children;
+    if (n >= slides.length) {slideIndex = 0} 
+    if (n < 0) {slideIndex = slides.length - 1}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.transform = "translateX(-" + slideIndex * 100 + "%)";
+    }
+}document.addEventListener('keydown', function(event) {
+    if (event.key === 'ArrowRight') {
+        moveSlide(1);
+    } else if (event.key === 'ArrowLeft') {
+        moveSlide(-1);
+    }
+});
+
+
+    </script>
+</body>
+</html>
